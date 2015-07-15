@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' type="text/css" href="style.css">
+<script language="javascript" type="text/javascript" src="jquery-2.1.4.js"></script>
+	<title>Paulina Levit</title>
+</head>
+<body>
+<div class="title-text">
+	Welcome!
+</div>
+<div class="thin-line">  </div>
+<div class="thick-line"> </div>
+<div class="thin-line2"> </div>
+
+<div class="main-info"> 
+	<div class="main-info-text" id="first">
+	<br><br><br>
+	Hello! I'm Paulina, which you probably already know, being here and all. 
+	<br><br>
+	<div class="gray-line"> </div>
+	<br>
+	Click <button>here</button> and we'll get to know each other a bit better. 
+	</div>
+	<div class="main-info-text" id="second">
+	<br><br><br>
+	
+	</div>
+</div>
+</body>
+<script language="javascript" type="text/javascript">
+    $( "button" ).click(function() {
+  		$( "#first" ).fadeOut( "slow" );
+  		$( "#second" ).fadeIn( "slow" );
+	});
+</script>
+</html>
