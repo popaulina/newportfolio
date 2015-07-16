@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' type="text/css" href="style.css">
+<script language="javascript" type="text/javascript" src="jquery-2.1.4.js"></script>
+	<title>Paulina Levit</title>
+</head>
+<body>
+<div class="title-text">
+	Welcome!
+</div>
+<div class="thin-line">  </div>
+<div class="thick-line"> </div>
+<div class="thin-line2"> </div>
+    <div class="resume-nav nav"> My Resume </div>
+	<div class="projects-nav nav"> Projects </div>
+	<div class="ait-nav nav"> AIT </div>
+	<div class="download-button nav"> 
+		<a href="resume.png" download="Paulina_Levit_Resume">
+			Download
+		</a>
+	</div>
+	<div class="resume-image"> <img src="resume.png"> </div>
+    
+</body>
+<script language="javascript" type="text/javascript">
+	$(document).ready(function() {
+		$(".resume-image").css("scrollbarWidth", "40px");
+	});
+
+    $(".ait-nav").click(function () {
+        window.location.href = 'ait.html';
+    });
+
+    $(".resume-nav").click(function(event) {
+    	window.location.href = '#';
+    });
+
+
+</script>
+</html>
