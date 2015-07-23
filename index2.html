@@ -30,6 +30,23 @@
 </div>
 
 <div class="post resume">
+	<div class="resume-image"> <img src="resume.png"> </div>
+</div>
+
+<div class="post ait">
+	<div class="ait-text">
+		<br><br><br><br><img src="ait.jpg">
+		<br><br><br><br>
+		Awesome IT was created in October of 2014. Myself and two other founders wanted to bring a fresh face to Managed Service Providers. We created a company that brings a personal touch to the IT business, giving every client all the attention they need and deserve. I serve as a CEO and the Director of Client Services. My role is to ensure that our clients are well taken care of and that all tickets that are issued are dealt with quickly and skillfully. I also program on many of the software projects that our company develops. Check us out at <a href="http://ait.nyc" target="_blank">ait.nyc</a>!
+	</div>
+</div>
+
+<div class="post projects">
+
+</div>
+
+<div class="post about-me">
+
 </div>
 </body>
 
@@ -39,22 +56,38 @@ function reset() {
 	$(".text").fadeOut('slow');
 	$(".contact").fadeOut('slow');
 	$(".resume").fadeOut('slow');
+	$(".ait").fadeOut('slow');
+	$(".projects").fadeOut('slow');
+	$(".about-me").fadeOut('slow');
 }
 $("#home").click(function () {
-	reset();
-	$(".intro").fadeIn('slow');
-	$(".text").fadeIn('slow');
-	$(".contact").fadeIn('slow');
+	if($(".intro").css("display") == "none"){
+		reset();
+		$(".intro").fadeIn('slow');
+		$(".text").fadeIn('slow');
+		$(".contact").fadeIn('slow');
+	}
 });
 
 
 $("#ait").click(function () {
     reset();
+    $(".ait").fadeIn('slow');
 });
 
 $("#resume").click(function() {
 	reset();
 	$(".resume").fadeIn('slow');
 });
+
+$("#projects").click(function () {
+	reset();
+	$(".projects").fadeIn('slow');
+})
+
+$("#about-me").click(function () {
+	reset();
+	$(".about-me").fadeIn('slow');
+})
 </script>
 </html>

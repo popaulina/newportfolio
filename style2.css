@@ -5,6 +5,7 @@
 
 body {
 	background-color: black;
+	overflow: hidden;
 }
 
 a {
@@ -108,6 +109,41 @@ a {
 	display: none;
 }
 
-.resume {
+.resume-image {
+	height: 80vh;
+	overflow-y: scroll;
+	border-color: #FFF;
+	margin-left: 10%;
+	margin-top: 100px;
+}
 
+.ait { }
+
+.ait-text {
+	font-family: "Abel";
+	font-weight: bold;
+	text-align: center;
+	color: #465f74;
+	width: 80%;
+	margin-left: 10%;
+}
+
+img {
+	max-width: 100%;
+	opacity: 1;
+}
+
+::-webkit-scrollbar {
+      width: 10px;
+      background-color: #708090;
+      border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+      background-color: #0976af; 
+      border-radius: 5px;
+}
+
+div.ait-text a {
+	color: #0f75bd;
 }

@@ -180,8 +180,7 @@ button {
 }
 
 .resume-image {
-	width: 80%;
-	height: 65vh;
+	height: 80vh;
 	overflow-y: scroll;
 	border-color: #FFF;
 	margin-left: 10%;
