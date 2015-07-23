@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: black;
+	background-color: #467;
 	overflow: hidden;
 }
 
@@ -14,7 +14,7 @@ a {
 }
 
 .intro {
-	background-image: url("bg.jpg");
+	background-image: url("bg2.jpg");
 	opacity: 1;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -53,7 +53,7 @@ a {
 	color: white;
 	font-family: "Abel";
 	background-color: rgba(0, 0, 0, 0.5);
-	opacity: .8;
+	opacity: .9;
 	position: absolute;
 	border-radius: 5px;
 }
@@ -69,31 +69,31 @@ a {
 }
 
 #about-me {
-	margin-left: 5%;
-	width: 10%;
-	position: absolute;
-}
-
-#projects {
 	margin-left: 25%;
 	width: 10%;
 	position: absolute;
 }
 
-#resume {
+#projects {
 	margin-left: 45%;
 	width: 10%;
 	position: absolute;
 }
 
-#ait {
+#resume {
 	margin-left: 65%;
 	width: 10%;
 	position: absolute;
 }
 
-#home {
+#ait {
 	margin-left: 85%;
+	width: 10%;
+	position: absolute;
+}
+
+#home {
+	margin-left: 5%;
 	width: 10%;
 	position: absolute;
 }
@@ -102,7 +102,7 @@ a {
 	width: 90%;
 	margin-left: 5%;
 	background-color: white;
-	opacity: .8;
+	opacity: .9;
 	height: 80vh;
 	margin-top: 10vh;
 	border-radius: 5px;
@@ -113,11 +113,8 @@ a {
 	height: 80vh;
 	overflow-y: scroll;
 	border-color: #FFF;
-	margin-left: 10%;
 	margin-top: 100px;
 }
-
-.ait { }
 
 .ait-text {
 	font-family: "Abel";
@@ -128,22 +125,50 @@ a {
 	margin-left: 10%;
 }
 
+.about-me {
+
+}
+
 img {
 	max-width: 100%;
-	opacity: 1;
 }
 
 ::-webkit-scrollbar {
       width: 10px;
-      background-color: #708090;
+      background-color: white;
       border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-      background-color: #0976af; 
+      background-color: grey; 
       border-radius: 5px;
 }
 
 div.ait-text a {
 	color: #0f75bd;
+}
+
+div.about-me img {
+	border-radius: 10px;
+	width: 20%;
+	height: 25%;
+	border-color: black;
+	border-width: 5px;
+	margin: 5%;
+}
+
+.about-me-text {
+	padding: 5% 5% 0% 5%;
+	font-family: "Quicksand";
+}
+
+.download {
+	position: fixed;
+	color: white;
+	font-size: 20px;
+	margin-left: 60%;
+	margin-top: -20px;
+	text-shadow: 2px 2px 2px #000;
+	font-family: "Quicksand";
+	font-style: italic;
 }
