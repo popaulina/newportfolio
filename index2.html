@@ -4,17 +4,57 @@
 	<title>Paulina Levit</title>
 	<link rel='stylesheet' type="text/css" href="style2.css">
 	<link href='http://fonts.googleapis.com/css?family=Abel|Quicksand|Pacifico' rel='stylesheet' type='text/css'>
+	<script language="javascript" type="text/javascript" src="jquery-2.1.4.js"></script>
 </head>
 <body>
 <div class="intro"></div>
+<div class="contact">
+	email: <a href="mailto:levit@nyu.edu">levit[at]nyu.edu</a><br>
+	phone: (646) 258-8593<br>
+	github: <a href="github.com/popaulina">github.com/popaulina</a><br><br>
+
+	Hi there! Welcome to my site. <br>
+	Here you can learn a bit more about me and my skills, see my resume, and play with some of my old projects. <br>
+	Shoot me an email to get in touch.
+</div>
 <div class="text">
 	<div class="title">Paulina Levit</div>
 	<div class="sub-title">Software Developer</div>
 </div>
 <div class="nav">
+	<div id="about-me">about me</div>
 	<div id="projects">projects</div>
 	<div id="ait">AIT</div>
 	<div id="resume">resume</div>
+	<div id="home">home</div>
+</div>
+
+<div class="post resume">
 </div>
 </body>
+
+<script language="javascript" type="text/javascript">
+function reset() {
+	$(".intro").fadeOut('slow');
+	$(".text").fadeOut('slow');
+	$(".contact").fadeOut('slow');
+	$(".resume").fadeOut('slow');
+}
+$("#home").click(function () {
+	reset();
+	$(".intro").fadeIn('slow');
+	$(".text").fadeIn('slow');
+	$(".contact").fadeIn('slow');
+});
+
+
+$("#ait").click(function () {
+    reset();
+});
+
+$("#resume").click(function() {
+	reset();
+	$(".resume").fadeIn('slow');
+});
+</script>
 </html>
