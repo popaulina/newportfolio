@@ -26,7 +26,7 @@
 	<div id="projects">projects</div>
 	<div id="ait">AIT</div>
 	<div id="resume">resume</div>
-	<div id="home">home</div>
+	<a href="" id="home">home</div>
 </div>
 
 <div class="post resume">
@@ -43,16 +43,25 @@
 </div>
 
 <div class="post projects">
+	<div class="projects-text">
+		Here, as you may have guessed, you will find some of my old projects. Much of this work was done when I was first starting out with new languages, just to accustom myself with syntax and make something somewhat fun in the meanwhile. The source code for these projects is available on my <a href="https://github.com/popaulina" target="_blank">Github</a>.
 
+		<br><br><div class="projects-title">Java - Chat Application</div>
+		<br>A small, insecure chat application with both server and client.
+		<br><br><div class="projects-images">
+				<img class="img" src="http://puu.sh/heNrj/47b8060879.png">
+				<img class="img" src="http://puu.sh/heLRQ/11673d7ab1.png"> 
+		</div>
+	</div>
 </div>
 
 <div class="post about-me">
-	<img src="photo.jpg" align="left"> 
+	<img src="photo2.jpg" align="left"> 
 	<div class="about-me-text">
 		Hi there! As you very well know, I'm Paulina. I am currently studying Computer Science at the 
 		Polytechnic School of Engineering at NYU (I know, it's a mouthful). I'm minoring in Game Engineering and Integrated Digital Media. In other words, I enjoy working with a very wide range of interests in programming. I'm constantly on the lookout for a new language to try or a project to take up. Currently, I've been re-vamping this website, so you may see it change from time to time. 
 		<br><br>I've programmed in C++, Python, C#, Java, Ruby, and HTML/CSS/Javascript. I currently am a Student Programmer Analyst at NYU, where I help develop and maintain applications written in C# on the ASP.NET 4.0 platform.
-		<br><br>When not at work at NYU I've also got a small MSP (Managed Service Provider) to help run - Awesome IT. Find out more about it on my page for AIT. 
+		<br><br>When not at work at NYU I've also got a small MSP (Managed Service Provider) to help run - Awesome IT. Find out more about it on my page for <a id="ait-link">AIT.</a> 
 
 	</div> 
 </div>
@@ -68,17 +77,15 @@ function reset() {
 	$(".projects").fadeOut('slow');
 	$(".about-me").fadeOut('slow');
 }
-$("#home").click(function () {
-	if($(".intro").css("display") == "none"){
-		reset();
-		$(".intro").fadeIn('slow');
-		$(".text").fadeIn('slow');
-		$(".contact").fadeIn('slow');
+
+$("#ait").click(function () {
+	if($(".ait").css("display") == "none"){
+	    reset();
+	    $(".ait").fadeIn('slow');
 	}
 });
 
-
-$("#ait").click(function () {
+$("#ait-link").click(function () {
 	if($(".ait").css("display") == "none"){
 	    reset();
 	    $(".ait").fadeIn('slow');

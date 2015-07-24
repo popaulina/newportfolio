@@ -102,6 +102,7 @@ a {
 	width: 90%;
 	margin-left: 5%;
 	background-color: white;
+	overflow-y: scroll;
 	opacity: .9;
 	height: 80vh;
 	margin-top: 10vh;
@@ -111,9 +112,7 @@ a {
 
 .resume-image {
 	height: 80vh;
-	overflow-y: scroll;
 	border-color: #FFF;
-	margin-top: 100px;
 }
 
 .ait-text {
@@ -150,16 +149,18 @@ div.ait-text a {
 
 div.about-me img {
 	border-radius: 10px;
-	width: 20%;
-	height: 25%;
+	width: 200px;
+	height: 200px;
 	border-color: black;
 	border-width: 5px;
 	margin: 5%;
+
 }
 
 .about-me-text {
 	padding: 5% 5% 0% 5%;
 	font-family: "Quicksand";
+
 }
 
 .download {
@@ -171,4 +172,34 @@ div.about-me img {
 	text-shadow: 2px 2px 2px #000;
 	font-family: "Quicksand";
 	font-style: italic;
+}
+
+.projects-text {
+	text-align: center;
+	font-family: "Quicksand";
+	margin: 20px;
+}
+
+div.projects-text a {
+	color: #79a;
+}
+
+div.about-me-text a {
+	color: #79a;
+}
+
+.projects-title {
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.projects-images {
+	overflow-x: hidden;
+}
+
+div.projects-images img {
+	width: 250px;
+	height: 150px;
+	position: relative;
 }
