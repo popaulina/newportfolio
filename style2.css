@@ -13,6 +13,15 @@ a {
 	color: white;
 }
 
+a:hover {
+	text-shadow: 3px 3px 2px #000;
+}
+
+hr {
+	width: 50%;
+	margin-left: 25%;
+}
+
 .intro {
 	background-image: url("bg2.jpg");
 	opacity: 1;
@@ -44,12 +53,9 @@ a {
 
 .contact {
 	width: 25%;
-	height: 45vh;
 	margin-left: 15%;
 	margin-top: 25vh;
-	padding-left: 30px;
-	padding-top: 30px;
-	padding-right: 30px;
+	padding: 30px;
 	color: white;
 	font-family: "Abel";
 	background-color: rgba(0, 0, 0, 0.5);
@@ -147,6 +153,10 @@ div.ait-text a {
 	color: #0f75bd;
 }
 
+div.ait-text a:hover {
+	text-shadow: none;
+}
+
 div.about-me img {
 	border-radius: 10px;
 	width: 200px;
@@ -184,14 +194,23 @@ div.projects-text a {
 	color: #79a;
 }
 
+div.projects-text a:hover {
+	text-shadow: none;
+}
+
 div.about-me-text a {
 	color: #79a;
+}
+
+div.about-me-text a:hover {
+	text-shadow: none;
 }
 
 .projects-title {
 	text-align: left;
 	font-weight: bold;
 	font-size: 20px;
+	margin-left: 5%;
 }
 
 .projects-images {
