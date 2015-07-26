@@ -71,50 +71,54 @@
 
 <script language="javascript" type="text/javascript">
 function reset() {
-	$(".intro").animate({ 'marginLeft': '-=100%' }, 700);
-	$(".text").animate({ 'marginLeft': '-=100%' }, 700);
-	$(".contact").animate({ 'marginLeft': '-=100%' }, 700);
-	$(".resume").fadeOut(700);
-	$(".ait").fadeOut(700);
-	$(".projects").fadeOut(700);
-	$(".about-me").fadeOut(700);
+	$(".intro").animate({ 'marginLeft': '-=100%' }, 600);
+	$(".text").animate({ 'marginLeft': '-=100%' }, 600);
+	$(".contact").animate({ 'marginLeft': '-=100%' }, 600);
+	
+	if($(".ait").css("display") != "none") { 
+		$(".ait").animate({ 'marginLeft': '-=100%' }, {
+			duration: 600,
+			complete: function() {$(".ait").delay(600).fadeOut(1);}		
+		});
+	}
+	if($(".resume").css("display") != "none") { 
+		$(".resume").animate({ 'marginLeft': '-=100%' }, {
+			duration: 600,
+			complete: function() {$(".resume").css("display" , "none");}		
+		});
+	}
+	if($(".projects").css("display") != "none") { 
+		$(".projects").animate({ 'marginLeft': '-=100%' }, {
+			duration: 600,
+			complete: function() {$(".projects").css("display" , "none");}		
+		});
+	}
+	if($(".about-me").css("display") != "none") { 
+		$(".about-me").animate({ 'marginLeft': '-=100%' }, {
+			duration: 600,
+			complete: function() {$(".about-me").css("display" , "none");}		
+		});
+	}
 }
 
-$("#ait").click(function () {
-	if($(".ait").css("display") == "none"){
-	    reset();
-	    $(".ait").fadeIn('fast');
-	    $(".ait").css('marginLeft','-95%');
-	    $(".ait").animate({'marginLeft':'+=100%'},700);
-	}
-});
-
-$("#ait-link").click(function () {
-	if($(".ait").css("display") == "none"){
-	    reset();
-	    $(".ait").fadeIn(700);
-	}
-});
-
-$("#resume").click(function() {
-	if($(".resume").css("display") == "none"){
+function move(c) {
+	var element = document.getElementsByClassName(c)
+	if($(element).css("display") == "none"){
 		reset();
-		$(".resume").fadeIn(700);
+		$(element).fadeIn('fast');
+	    $(element).css('marginLeft','-95%');
+	    $(element).animate({'marginLeft':'+=100%'},700);
 	}
-});
+}
 
-$("#projects").click(function () {
-	if($(".projects").css("display") == "none"){
-		reset();
-		$(".projects").fadeIn(700);
-	}
-})
+$("#ait").click(function () { move("ait") });
 
-$("#about-me").click(function () {
-	if($(".about-me").css("display") == "none"){
-		reset();
-		$(".about-me").fadeIn(700);
-	}
-})
+$("#ait-link").click(function () { move("ait") });
+
+$("#resume").click(function() { move("resume") });
+
+$("#projects").click(function () { move("projects") })
+
+$("#about-me").click(function () { move("about-me") })
 </script>
 </html>
