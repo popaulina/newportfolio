@@ -49,10 +49,30 @@
 		<hr>
 		<br>
 		<br><br><div class="projects-title">Java - Chat Application</div>
-		<br>A small, insecure chat application with both server and client.
+		<br><p>A small, insecure chat application with both server and client. Get the source <a href="https://github.com/popaulina/chatclient">here.</a></p>
 		<br><br><div class="projects-images">
 				<img class="img" src="http://puu.sh/heNrj/47b8060879.png">
 				<img class="img" src="http://puu.sh/heLRQ/11673d7ab1.png"> 
+		</div>
+		<br><br><div class="projects-title">C# - Wantowski's KMaps</div>
+		<br><p>A two player game built in Unity. Originally thought up by my high school electronics teacher, Mark Wantowski, this game is a fun twist on Karnaugh Maps - educational and entertaining. (As Unity's web player is no longer supported by Chrome, I ask that you <a href="https://github.com/popaulina/kmap">download the source from my Github</a> to play the game.)</p>
+		<br><br><div class="projects-images">
+				<img class="img" src="http://puu.sh/dU3k9/7131938d83.png">
+				<img class="img" src="http://puu.sh/dU3px/96839817cd.png"> 
+				<img class="img" src="http://puu.sh/dU3uj/69e5c90095.png">
+		</div>
+		<br><br><div class="projects-title">C# - Clash of Kittens</div>
+		<br><p>Clash of Kittens is a game similar to snake, except with two players and a much cuter premise. Clash was written in C# and also built with Unity. This was my first attempt at working with Unity, and the game was built in about two weeks for a final project. It was created in collaboration with Louis Albano, Cassian Whitehurst, and Mark Koutsantanou. <a href="https://github.com/louisalbano/ClashofKittens">Here is the source.</a></p>
+		<br><br><div class="projects-images">
+				<img class="img" src="http://paulinalevit.me/titlescreen.png">
+				<img class="img" src="http://paulinalevit.me/game.png"> 
+				<img class="img" src="http://paulinalevit.me/loss.png">
+		</div>
+		<br><br><div class="projects-title">HTML/CSS - My Website v1.0</div>
+		<br><p>This is the original look of this website!</p>
+		<br><br><div class="projects-images">
+				<img class="img" src="http://puu.sh/jCXGd/0475bff714.png">
+				<img class="img" src="http://puu.sh/jCXB1/594fd55f55.png"> 
 		</div>
 	</div>
 </div>
@@ -71,34 +91,13 @@
 
 <script language="javascript" type="text/javascript">
 function reset() {
-	$(".intro").animate({ 'marginLeft': '-=100%' }, 600);
-	$(".text").animate({ 'marginLeft': '-=100%' }, 600);
-	$(".contact").animate({ 'marginLeft': '-=100%' }, 600);
-	
-	if($(".ait").css("display") != "none") { 
-		$(".ait").animate({ 'marginLeft': '-=100%' }, {
-			duration: 600,
-			complete: function() {$(".ait").delay(600).fadeOut(1);}		
-		});
-	}
-	if($(".resume").css("display") != "none") { 
-		$(".resume").animate({ 'marginLeft': '-=100%' }, {
-			duration: 600,
-			complete: function() {$(".resume").css("display" , "none");}		
-		});
-	}
-	if($(".projects").css("display") != "none") { 
-		$(".projects").animate({ 'marginLeft': '-=100%' }, {
-			duration: 600,
-			complete: function() {$(".projects").css("display" , "none");}		
-		});
-	}
-	if($(".about-me").css("display") != "none") { 
-		$(".about-me").animate({ 'marginLeft': '-=100%' }, {
-			duration: 600,
-			complete: function() {$(".about-me").css("display" , "none");}		
-		});
-	}
+	$(".intro").fadeOut('slow');
+	$(".text").fadeOut('slow');
+	$(".contact").fadeOut('slow');
+	$(".ait").fadeOut('slow');
+	$(".resume").fadeOut('slow');
+	$(".projects").fadeOut('slow');
+	$(".about-me").fadeOut('slow');
 }
 
 function move(c) {
